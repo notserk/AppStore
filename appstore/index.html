@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!--<link rel="stylesheet" href="style.css">-->
+    <style>
+        /*div.row{*/
+            /*border-bottom: #000000 solid;*/
+        /*}*/
+        .switch-view{
+            color: #ffffff;
+            background-color: #336796;
+            border: none;
+        }
+
+        .install{
+            border-color: #336796;
+            color: #336796;
+            font-weight: bold;
+        }
+
+        hr{
+            border: none;
+            height: 1px;
+            /* Set the hr color */
+            color: #333; /* old IE */
+            background-color: #333; /* Modern Browsers */
+        }
+
+        table tr > td > span{
+            text-align: center;
+        }
+
+        .table-striped{
+            background: #cccccc;
+        }
+
+        .table-striped tr:nth-child(odd){
+            background: #eeeeee !important;
+        }
+
+        .row{
+            margin-bottom: 15px;
+        }
+
+        #app-list > li:nth-child(odd){
+            background: #cccccc;
+        }
+
+        #app-list > li:nth-child(even){
+            background: #eeeeee;
+        }
+
+        #app-list .row{
+            margin-bottom: 0;
+        }
+
+        #app-list .caption span{
+            text-align: center;
+        }
+
+        .grid-row p{
+            color: #000000;
+        }
+
+        .app-thumbnail{
+            min-height: 70px;
+            min-width: 70px;
+            padding: 15px 25px 15px 25px;
+        }
+        .app-description{
+            padding-top: 15px;
+        }
+
+        .img-grid-tablet{
+            margin: auto;
+        }
+
+        .screenshots{
+            min-height: 174px;
+            min-width: 140px;
+            max-height: 400px;
+            margin: auto;
+        }
+
+
+    </style>
+</head>
+<body ng-app="appstore">
+    <header class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                <img class="img-responsive" src="images/USAID-logo-apps.png" alt=""/>
+            </div>
+        </div>
+        <hr/>
+    </header>
+    <ng-view></ng-view>
+
+    <script src="libs/jquery/dist/jquery.min.js"></script>
+    <script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="libs/angular/angular.min.js"></script>
+    <script src="libs/angular-route/angular-route.min.js"></script>
+    <script src="libs/ua-parser-js/src/ua-parser.js"></script>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/controllers/mainCtrl.js"></script>
+    <script src="scripts/directives/appsDirective.js"></script>
+    <script src="scripts/services/services.js"></script>
+
+    <script src="http://localhost:35729/livereload.js"></script>
+</body>
+</html>

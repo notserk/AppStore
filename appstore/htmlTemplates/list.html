@@ -1,0 +1,47 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <a style="position: relative; float: right;" href="#/grid"  class="btn btn-default switch-view">Grid View</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <h1>App Store</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="container-fluid">
+            <!--<div class="table-responsive">-->
+                <!--<table class="table table-striped">-->
+                    <!--<tr ng-repeat="app in apps">-->
+                        <!--<td>-->
+                            <!--<a href="#/details/{{$index}}">-->
+                                <!--<img height="175" width="175" ng-src="{{app.thumbnail}}">-->
+                            <!--</a>-->
+
+                        <!--</td>-->
+                        <!--<td>-->
+                            <!--<span style="text-align: center">{{app.name}}</span>-->
+                            <!--<p>{{app.description}}</p>-->
+                        <!--</td>-->
+                    <!--</tr>-->
+                <!--</table>-->
+            <!--</div>-->
+            <ul id="app-list" class="list-unstyled">
+                <li ng-repeat="app in apps">
+                    <div class="row">
+                        <a class="grid-row" href="#/details/{{$index}}">
+                            <div class="col-xs-4 col-sm-2 col-md-2 app-thumbnail">
+                                    <img class="img-responsive" ng-src="{{app.thumbnail}}" alt="" height="188px" width="188px"/>
+                                    <p style="text-align: center">{{app.name}}</p>
+                            </div>
+                            <div class="col-xs-8 col-sm-10 col-md-10 app-description">
+                                <p>{{app.description}}</p>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

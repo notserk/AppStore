@@ -1,0 +1,14 @@
+{
+  "name": "appstore",
+  "version": "0.0.0",
+  "authors": [
+    "kshirley <kes51290@gmail.com>"
+  ],
+  "description": "appstore using bootstrap",
+  "dependencies": {
+    "bootstrap": "latest",
+    "jquery": "latest",
+    "angular": "latest",
+    "d3": "latest"
+  }
+}

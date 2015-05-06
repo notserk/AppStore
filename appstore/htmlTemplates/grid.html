@@ -1,0 +1,20 @@
+<section class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <a style="position: relative; float: right;" href="#/list" class="btn btn-default switch-view">List View</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <h1>App Store</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div style="text-align: center" ng-repeat="app in apps" class="col-md-3 col-xs-6 col-sm-4">
+            <a href="#/details/{{$index}}" >
+                <img height="175" width="175" class="img-responsive img-grid-tablet" ng-src="{{app.thumbnail}}">
+                <span>{{app.name}}</span>
+            </a>
+        </div>
+    </div>
+</section>

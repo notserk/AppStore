@@ -1,0 +1,23 @@
+<div class="container-fluid">
+    <div class="row ">
+        <div class="col-md-12">
+            <a style="position: relative; float: left;" class="btn btn-default install" back><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> Back</a>
+            <!--<a style="position: relative; float: right;" class="btn btn-default install" href="#">Install</a>-->
+            <install-button></install-button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2">
+            <img class="img-responsive" ng-src="{{thumbnail}}"/>
+        </div>
+        <div class="col-xs-8 col-sm-8 col-md-10 col-lg-10">
+            <p>{{description}}</p>
+        </div>
+    </div>
+    <div class="row">
+        <p class="col-md-12">App Views</p>
+        <div ng-repeat="screen in screens" class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <img class="img-responsive screenshots" ng-src="{{screen.src}}" alt=""/>
+        </div>
+    </div>
+</div>
